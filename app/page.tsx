@@ -1,5 +1,9 @@
-import { ModeToggle } from "@/components/dark-mode/mode-toggle";
+import Search from "@/components/search";
 
 export default function Home() {
-	return <ModeToggle />;
+  return (
+    <>
+      <Search />
+    </>
+  );
 }
