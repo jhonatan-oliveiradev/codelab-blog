@@ -3,10 +3,12 @@ import Logo from "./logo";
 
 const Header = () => {
   return (
-    <header className="mx-auto flex max-w-7xl items-center justify-between bg-[#17171A] p-2">
-      <Logo />
-      <ModeToggle />
-    </header>
+    <div className="w-full bg-[#17171A]">
+      <header className="mx-auto flex max-w-7xl items-center justify-between p-2">
+        <Logo />
+        <ModeToggle />
+      </header>
+    </div>
   );
 };
 

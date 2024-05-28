@@ -1,7 +1,7 @@
 "use client";
 
 import { HeartIcon } from "lucide-react";
-import { Card, CardHeader } from "./ui/card";
+import { Card, CardContent, CardHeader } from "./ui/card";
 import { articles } from "@/articles";
 import { useState } from "react";
 import { Button } from "./ui/button";
@@ -33,11 +33,12 @@ const Article = () => {
               </Button>
             )}
           </CardHeader>
-          <h2 className="text-lg font-semibold">{article.title}</h2>
-          <p className="text-sm text-gray-500">{article.description}</p>
-          <button className="mt-4 flex items-center gap-2 text-sm text-gray-500">
-            <span>Salvar</span>
-          </button>
+          <CardContent>
+            <h2 className="mb-4 text-xl font-semibold">{article.title}</h2>
+            <p className="text-sm text-muted-foreground">
+              {article.description}
+            </p>
+          </CardContent>
         </Card>
       ))}
     </section>
